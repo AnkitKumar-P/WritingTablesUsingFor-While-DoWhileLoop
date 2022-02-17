@@ -1,0 +1,65 @@
+// CALCULATINF nCr BY TAKING USER INPUT
+
+
+
+
+
+#include <iostream>
+using namespace std;
+
+
+
+
+//  FOR FINDING FACTORIAL OF A NUMBER
+
+
+
+
+
+int factorial(int n)
+{
+    int factorial = 1;
+    for( int i = 1; i <= n; i++)
+    {
+          factorial*=i;
+    }
+    return factorial;
+}
+
+
+
+
+
+
+// FUNCTION FOR CALCAUTING nCr
+
+
+
+
+
+float nCr()
+{
+    int n, r;
+    cout<<"Provide input n. \n";
+    cin>>n;
+    cout<<"Provide input r. \n";
+    cin>>r;
+    float result = factorial(n) / (factorial((n-r)) * factorial(r));
+    cout<<"Your OutPut is."<<endl;
+    cout<<result<<endl<<"Here we are done Thanks!"<<endl<<"Hare Krishna!!";
+    return result;
+}
+
+
+
+
+
+// MAIN FUNCTION
+
+
+
+int main()
+{
+    nCr();
+    return 0;
+}
